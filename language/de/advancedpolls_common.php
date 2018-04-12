@@ -35,19 +35,7 @@ if (empty($lang) || !is_array($lang))
 // ‚ ‘ ’ « » „ “ ” …
 //
 
-/**
- * EXTENSION-DEVELOPERS PLEASE NOTE
- *
- * You are able to put your permission sets into your extension.
- * The permissions logic should be added via the 'core.permissions' event.
- * You can easily add new permission categories, types and permissions, by
- * simply merging them into the respective arrays.
- * The respective language strings should be added into a language file, that
- * start with 'permissions_', so they are automatically loaded within the ACP.
- */
-
-// User Permissions
 $lang = array_merge($lang, array(
-	'ACL_F_SEEVOTERS'			=> 'Kann sehen, wer abgestimmt hat',
-	'ACL_M_SEEVOTERS'			=> 'Kann Teilnehmer der Umfrage ansehen',
+	'NOTIFICATION_AP_POLL_ENDED'		=> '<strong>Ergebnisse sind nun sichtbar für folgende Umfrage</strong>:',
+	'NOTIFICATION_TYPE_AP_POLL_ENDED'	=> 'Für eine Umfrage, an der du teilgenommen hast, sind nun Ergebnisse sichtbar',
 ));
